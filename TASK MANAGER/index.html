@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+    <div class="container">
+        <nav>
+            <h1>Task Manager</h1>
+            <button id="theme-toggle">
+        🌙 Dark Mode
+    </button>
+</nav>
+        </nav>
+        <main>
+            <form id="task-form">
+                <input
+    type="text"
+    id="task-name"
+    
+    placeholder="Task Name"
+>
+                <input type="text" id="task-desc" placeholder="Task Description">
+                <input type="date" id="task-date" placeholder="Due Date">
+                <select id="task-category">
+                    <option value="work">Work</option>
+                    <option value="personal">Personal</option>
+                    <option value="study">Study</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+            <div id="taskList"></div>
+            <div id="taskList"></div>
+
+
+
+            <section id="rendering-pipeline">
+  <h2>Browser Rendering Pipeline</h2>
+
+  <div class="pipeline-flow">
+
+    <div class="step">HTML Parsing</div>
+    <div class="arrow">➡</div>
+
+    <div class="step">Tokenization</div>
+    <div class="arrow">➡</div>
+
+    <div class="step">DOM Tree</div>
+    <div class="arrow">➡</div>
+
+    <div class="step">CSS Parsing</div>
+    <div class="arrow">➡</div>
+
+    <div class="step">CSSOM Tree</div>
+    <div class="arrow">➡</div>
+
+    <div class="step highlight">DOM + CSSOM</div>
+    <div class="arrow">➡</div>
+
+    <div class="step final">Render Tree</div>
+
+  </div>
+</section>
+  
+        </main>
+    </div>
+       
+      
+                
+    <script src="script.js"></script>
+</body>
+</html>
